@@ -1,5 +1,4 @@
 <script setup>
-// Dein Setup-Code (falls vorhanden)
 </script>
 
 <template>
