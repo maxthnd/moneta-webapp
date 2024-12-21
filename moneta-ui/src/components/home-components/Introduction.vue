@@ -11,7 +11,7 @@
           <img src="/assets/images/introduction/financeillustration.jpg" alt="" class="theme-img">
           <div class="theme-content">
             <h2 class="theme-title">We care about your time.</h2>
-            <p class="theme-text">Moneta is a modern way to create an overview about all your finances. Built to make your financial decisions more easier. Give yourself shot and try building your financial happyness.</p>
+            <p class="theme-text">Moneta is a modern way to create an overview about all your finances. Built to make your financial decisions easier. Give yourself shot and try building your financial happyness.</p>
             <button type="button" class="btn btn-primary" href="/about">About Us</button>
           </div>
         </div>
