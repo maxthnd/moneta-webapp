@@ -4,14 +4,15 @@
 <template>
   <nav class="navbar">
     <ul class="nav-left">
-      <li><RouterLink to="/home">Home</RouterLink></li>
-      <li><RouterLink to="/aboutus">About Us</RouterLink></li>
+      <li><RouterLink to="/">Home</RouterLink></li>
+      <li><RouterLink to="/about">About Us</RouterLink></li>
     </ul>
     <div class="logo">
       <a><img src="/assets/images/moneta_logo_trans.png" alt="Logo"></a>
     </div>
     <ul class="nav-right">
-      <li><RouterLink to="/account">Account</RouterLink> </li>
+      <li><RouterLink to="/dashboard">Dashboard</RouterLink></li>
+      <li><RouterLink to="/account">Account</RouterLink></li>
     </ul>
   </nav>
 </template>
@@ -68,6 +69,9 @@
 }
 
 .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;

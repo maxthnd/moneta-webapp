@@ -24,7 +24,7 @@
 
 .footer-image {
   width: auto;
-  height: 128px;
+  height: 84px;
 }
 
 .footer {
@@ -57,7 +57,7 @@
 .footer-links a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
