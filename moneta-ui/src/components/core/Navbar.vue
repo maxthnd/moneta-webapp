@@ -8,7 +8,7 @@
       <li><RouterLink to="/about">About Us</RouterLink></li>
     </ul>
     <div class="logo">
-      <a><img src="/assets/images/moneta_logo_trans.png" alt="Logo"></a>
+      <img src="/assets/images/moneta_logo_trans.png" alt="Logo">
     </div>
     <ul class="nav-right">
       <li><RouterLink to="/dashboard">Dashboard</RouterLink></li>
@@ -31,7 +31,6 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 12px;
