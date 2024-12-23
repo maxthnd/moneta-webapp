@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('plans', function (Blueprint $table) {
+        Schema::create('plan_stats', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->foreign("plan_stats_id");
-            $table->integer('budget');
-            $table->timestamp('updated_at')->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->foreign("plan_id");
+            $table->float("costs");
+            $table->float("income");
+            $table->string("type");
+            $table->dateTime("updated_at")->nullable();
+            $table->dateTime("created_at")->nullable();
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('plans');
+        Schema::dropIfExists('plan_stats');
     }
 };

@@ -5,16 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
-class Plan extends Model
+class Transaction extends Model
 {
-
     protected $fillable = [
         'name',
-        'budget',
+        'type',
+        'amount',
+        'category',
     ];
 
-    public function plan_stats(): HasOne {
-        return $this->hasOne(PlanStats::class);
+    public function plan(): HasOne {
+        return $this->hasOne(Plan::class);
     }
 
     protected function casts(): array
