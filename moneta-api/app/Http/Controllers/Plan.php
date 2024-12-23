@@ -12,9 +12,8 @@ class Plan extends Controller
     {
         \App\Models\Plan::create([
             'name' => $request->name,
-            'costs' => $request->costs,
-            'income' => $request->income,
             'budget' => $request->budget,
+            'plan_stats_id' => $request->plan_stats_id
         ]);
 
         return response()->json(['status' => 'OK 200']);
@@ -24,7 +23,7 @@ class Plan extends Controller
     {
         $plan = DB::table('plans')->where('name', $request->name)->select();
 
-        $plan->update(['costs' => $request->costs, 'income' => $request->income, 'budget' => $request->budget]);
+        $plan->update(['budget' => $request->budget]);
 
         return response()->json(['status' => 'OK 200']);
     }

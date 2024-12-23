@@ -3,18 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Plan extends Model
+class PlanStats extends Model
 {
-
     protected $fillable = [
-        'name',
-        'budget',
+        'costs',
+        'income',
+        'type',
     ];
 
-    public function plan_stats(): HasOne {
-        return $this->hasOne(PlanStats::class);
+    public function plan(): BelongsTo {
+        return $this->belongsTo(Plan::class);
     }
 
     protected function casts(): array
