@@ -82,6 +82,7 @@ if $DB; then
 
   cd moneta-api/ || exit
   php artisan migrate:fresh
+  php artisan serve
 else
   echo "[${Red}ERROR${Color_Off}] $(function_formatString "Step skipped, error occurred")"
 fi
