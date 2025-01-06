@@ -57,12 +57,12 @@ const goToPlanView = (plan) => {
           v-for="(item, index) in cards"
           :key="index"
           class="dashboard-card-link"
-          @click="goToPlanView(item.contents)">
+          @click="goToPlanView({ title: item.title, contents: item.contents })">
       <DashCardMiddle :title="item.title" :contents="item.contents" />
       </div>
       <div class="dashboard-buttons">
         <button class="btn btn-success">Create Plan</button>
-        <button class="btn btn-primary">Edit View</button>
+        <button class="btn btn-primary">Backup Plans</button>
         <button class="btn btn-danger">Delete All</button>
       </div>
     </div>
@@ -84,7 +84,7 @@ const goToPlanView = (plan) => {
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
-  padding: 0 64px;
+  padding: 0 64px 64px;
 }
 
 .dashboard-card-link {

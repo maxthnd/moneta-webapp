@@ -6,11 +6,10 @@ export const useSelectedPlanStore = defineStore("selectedPlan", {
     }),
     actions: {
         setPlan(plan) {
-            if (!plan) {
-                console.error("Kein Plan übergeben.");
-                return;
-            }
             this.plan = plan;
         },
+    },
+    persist: {
+        enabled: true,
     },
 });

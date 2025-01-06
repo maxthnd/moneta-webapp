@@ -27,9 +27,27 @@ const router = createRouter({
     {
       path: '/plan',
       name: 'plan',
-      component: () => import('../views/PlanView.vue')
+      component: () => import('../views/plan/PlanView.vue')
+    },
+    {
+      path: '/transaction',
+      name: 'transaction',
+      component: () => import('../views/plan/PlanNewTransactionView.vue')
+    },
+    {
+      path: '/legalnotice',
+      name: 'legalnotice',
+      component: () => import('../views/footer/LegalNoticeView.vue')
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: () => import('../views/footer/PrivacyView.vue')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { top: 0 }
+  }
 })
 
 export default router

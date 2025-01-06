@@ -20,7 +20,6 @@ import Footer from "@/components/core/Footer.vue";
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 .content{
   flex: 1;
