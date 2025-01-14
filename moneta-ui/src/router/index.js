@@ -27,6 +27,24 @@ const router = createRouter({
     {
       path: '/plan',
       name: 'plan',
+<<<<<<< HEAD
+      component: () => import('../views/plan/PlanView.vue')
+    },
+    {
+      path: '/transaction',
+      name: 'transaction',
+      component: () => import('../views/plan/PlanNewTransactionView.vue')
+    },
+    {
+      path: '/legalnotice',
+      name: 'legalnotice',
+      component: () => import('../views/footer/LegalNoticeView.vue')
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: () => import('../views/footer/PrivacyView.vue')
+=======
       component: () => import('../views/PlanView.vue')
     },
     {
@@ -38,8 +56,12 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: () => import('../views/RegisterView.vue')
+>>>>>>> 255f8a1c40f5c5707e0ae2f015cb551a83d48247
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { top: 0 }
+  }
 })
 
 export default router

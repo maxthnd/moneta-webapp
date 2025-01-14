@@ -27,13 +27,7 @@ const aboutItems = [
       <AboutHeader />
     </div>
     <div class="about-content">
-      <MiddleCard
-          v-for="(item, index) in aboutItems"
-          :key="index"
-          :title="item.title"
-          :text="item.text"
-          :imageUrl="item.imageUrl"
-      />
+      <h3>⚠️ This site is currently under maintenance.</h3>
     </div>
   </div>
 </template>
@@ -61,6 +55,9 @@ const aboutItems = [
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-item {

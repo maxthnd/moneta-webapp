@@ -12,7 +12,7 @@
           <div class="theme-content">
             <h2 class="theme-title">We care about your time.</h2>
             <p class="theme-text">Moneta is a modern way to create an overview about all your finances. Built to make your financial decisions easier. Give yourself shot and try building your financial happyness.</p>
-            <button type="button" class="btn btn-primary" href="/about">About Us</button>
+            <RouterLink to="about"><button type="button" class="btn btn-primary">About Us</button></RouterLink>
           </div>
         </div>
         <div class="introduction-theme">
@@ -20,7 +20,7 @@
           <div class="theme-content">
             <h2 class="theme-title">Build your wealth.</h2>
             <p class="theme-text">We work together with many partners and wealthy people in the whole world. Because of that we can only give you our best advices to save money and generate more money out of our advices.</p>
-            <button type="button" class="btn btn-primary" href="/about">About Us</button>
+            <button type="button" class="btn btn-primary" href="/account">Management</button>
           </div>
         </div>
       </div>
