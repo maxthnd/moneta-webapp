@@ -48,13 +48,6 @@ const getProgressBarClass = value => {
   }
 };
 
-const checkPlanStatus = () => {
-
-  for(item in contents){
-
-  }
-
-}
 </script>
 
 
