@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->foreign("plan_stats_id");
             $table->integer('budget');
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('created_at')->nullable();

@@ -13,10 +13,6 @@ class Plan extends Model
         'budget',
     ];
 
-    public function plan_stats(): HasOne {
-        return $this->hasOne(PlanStats::class);
-    }
-
     protected function casts(): array
     {
         return [

@@ -13,7 +13,6 @@ class Plan extends Controller
         \App\Models\Plan::create([
             'name' => $request->name,
             'budget' => $request->budget,
-            'plan_stats_id' => $request->plan_stats_id
         ]);
 
         return response()->json(['status' => 'OK 200']);
