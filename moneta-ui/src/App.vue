@@ -1,8 +1,7 @@
 <script>
 import Navbar from "@/components/core/Navbar.vue";
-import Footer from "@/components/core/Footer.vue";
 export default {
-  components: {Footer, Navbar},
+  components: {Navbar},
   data() {
     return {
       errorMessage: null,

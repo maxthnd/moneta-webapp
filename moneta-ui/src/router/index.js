@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue'),
     },
     {
       path: '/about',
@@ -27,6 +27,7 @@ const router = createRouter({
     {
       path: '/plan',
       name: 'plan',
+<<<<<<< HEAD
       component: () => import('../views/plan/PlanView.vue')
     },
     {
@@ -43,6 +44,19 @@ const router = createRouter({
       path: '/privacy',
       name: 'privacy',
       component: () => import('../views/footer/PrivacyView.vue')
+=======
+      component: () => import('../views/PlanView.vue')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/RegisterView.vue')
+>>>>>>> 255f8a1c40f5c5707e0ae2f015cb551a83d48247
     }
   ],
   scrollBehavior (to, from, savedPosition) {
