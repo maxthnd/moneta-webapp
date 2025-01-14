@@ -4,7 +4,8 @@ import router from "@/router/index.js";
 import Wave from "@/components/core/Wave.vue";
 import TransactionTable from "@/components/plan-components/TransactionTable.vue";
 import { ref, computed, onMounted } from "vue";
-import StatsCardMiddle from "@/components/core/StatsCardMiddle.vue";
+import StatsCardMiddle from "@/components/plan-components/StatsCardMiddle.vue";
+import ProgressStatsMiddle from "@/components/plan-components/ProgressStatsMiddle.vue";
 
 const store = useSelectedPlanStore();
 const showError = ref(false);
@@ -24,7 +25,7 @@ onMounted(() => {
 });
 
 const selectedPlan = computed(() => store.plan || { title: "Unbekannter Plan", contents: [] });
-
+console.log(selectedPlan.value);
 const extractValue = (key) => {
   const item = selectedPlan.value.contents.find((entry) => entry[key] !== undefined);
   return item ? item[key] : null;
@@ -39,10 +40,18 @@ const costs = computed(() => parseEuroValue(extractValue("Costs")));
 const addIncome = computed(() => parseEuroValue(extractValue("Add. Income")));
 const budget = computed(() => parseEuroValue(extractValue("Budget")));
 
+let difference = computed(() => (budget.value + addIncome.value) - costs.value);
+
+const transactions = computed(() => parseEuroValue(extractValue("Transactions")));
+
 const overallStats = computed(() => [
   { Costs: `${costs.value}€` },
   { "Add. Income": `${addIncome.value}€` },
   { Budget: `${budget.value}€` },
+]);
+const progressStats = computed(() => [
+  { Transactions: `${transactions.value}` },
+  { "Difference": `${difference.value}€`},
 ]);
 </script>
 
@@ -53,6 +62,7 @@ const overallStats = computed(() => [
     </div>
     <div class="plan-view-body">
       <StatsCardMiddle title="📚 Plan Stats" :contents="overallStats" />
+      <ProgressStatsMiddle title="⚡️ Progress Stats" :contents="progressStats" />
       <TransactionTable />
     </div>
     <Wave />

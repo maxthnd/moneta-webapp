@@ -8,7 +8,7 @@ defineProps({
     type: Array,
     default: () => [],
   },
-});
+})
 </script>
 
 
@@ -24,9 +24,6 @@ defineProps({
             <h3 class="item-key">{{ key }}</h3>
             <p class="item-value">{{ value }}</p>
           </div>
-        </div>
-        <div class="card-buttons">
-          <button class="btn btn-dark">Edit</button>
         </div>
       </div>
     </div>

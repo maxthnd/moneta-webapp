@@ -20,7 +20,7 @@
           <div class="theme-content">
             <h2 class="theme-title">Build your wealth.</h2>
             <p class="theme-text">We work together with many partners and wealthy people in the whole world. Because of that we can only give you our best advices to save money and generate more money out of our advices.</p>
-            <button type="button" class="btn btn-primary" href="/about">About Us</button>
+            <button type="button" class="btn btn-primary" href="/account">Management</button>
           </div>
         </div>
       </div>

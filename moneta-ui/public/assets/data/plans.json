@@ -1,0 +1,90 @@
+[
+  {
+    "title": "🛩️ Reisebudget",
+    "contents": [
+      { "Costs": "800€" },
+      { "Add. Income": "200€" },
+      { "Budget": "2000€" }
+    ],
+    "transactions": [
+      {
+        "name": "Flugtickets",
+        "amount": "500€",
+        "transaction_type": "Expense",
+        "transaction_category": "Travel"
+      },
+      {
+        "name": "Reisekasse",
+        "amount": "200€",
+        "transaction_type": "Income",
+        "transaction_category": "Savings"
+      }
+    ]
+  },
+  {
+    "title": "🏠 Haushaltsplan",
+    "contents": [
+      { "Costs": "1400€" },
+      { "Add. Income": "0€" },
+      { "Budget": "2500€" }
+    ],
+    "transactions": [
+      {
+        "name": "Miete",
+        "amount": "1000€",
+        "transaction_type": "Expense",
+        "transaction_category": "Rent"
+      },
+      {
+        "name": "Nebenkosten",
+        "amount": "400€",
+        "transaction_type": "Expense",
+        "transaction_category": "Utilities"
+      }
+    ]
+  },
+  {
+    "title": "📊 Sparziele",
+    "contents": [
+      { "Costs": "100€" },
+      { "Add. Income": "2500€" },
+      { "Budget": "3000€" }
+    ],
+    "transactions": [
+      {
+        "name": "Investitionen",
+        "amount": "1500€",
+        "transaction_type": "Income",
+        "transaction_category": "Investments"
+      },
+      {
+        "name": "Neues Fahrrad",
+        "amount": "500€",
+        "transaction_type": "Expense",
+        "transaction_category": "Personal"
+      }
+    ]
+  },
+  {
+    "title": "⚡️ Freizeitbudget",
+    "contents": [
+      { "Costs": "210€" },
+      { "Add. Income": "0€" },
+      { "Budget": "300€" }
+    ],
+    "transactions": [
+      {
+        "name": "Kino",
+        "amount": "100€",
+        "transaction_type": "Expense",
+        "transaction_category": "Going out"
+      },
+      {
+        "name": "Taschengeld",
+        "amount": "300€",
+        "transaction_type": "Income",
+        "transaction_category": "Other Income"
+      }
+    ]
+  }
+]

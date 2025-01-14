@@ -44,7 +44,6 @@
   border-radius: 80px;
   padding: 0 20px;
   z-index: 1000;
-
   animation: slideDown 0.8s ease-in-out;
 }
 
