@@ -26,8 +26,6 @@ Containerisierung: Docker
 
 <h2>Installation & Einrichtung</h2>
 
-Voraussetzungen
-
 Node.js & npm
 
 PHP & Composer
@@ -51,19 +49,19 @@ cp .env.example .env
 
 Passe die .env-Datei an (insbesondere Datenbankverbindung).
 
-Datenbank migrieren:
+<h2>Datenbank migrieren</h2>
 
 php artisan migrate --seed
 
-Backend starten:
+<h2>Backend starten</h2>
 
 php artisan serve
 
-Frontend (Vue.js) Setup
+<h2>Frontend (Vue.js) Setup</h2>
 
-Zum Frontend wechseln:
+Zum Frontend wechseln
 
-cd ../frontend
+cd ../moneta-ui
 
 Abhängigkeiten installieren:
 
@@ -73,7 +71,7 @@ Frontend starten:
 
 npm run dev
 
-Mit Docker starten
+<h2>Mit Docker starten</h2>
 
 Docker-Container starten:
 
