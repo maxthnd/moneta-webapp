@@ -14,19 +14,19 @@ Containerisierung: Docker
 
 <h3>Funktionen</h3>
 
-Erstellen und Verwalten von Budgetplänen
+- Erstellen und Verwalten von Budgetplänen
 
-Hinzufügen, Bearbeiten und Löschen von Transaktionen
+- Hinzufügen, Bearbeiten und Löschen von Transaktionen
 
-Übersichtliche Darstellung von Einnahmen und Ausgaben
+- Übersichtliche Darstellung von Einnahmen und Ausgaben
 
-Responsive Design mit Bootstrap
+- Responsive Design mit Bootstrap
 
-API-Schnittstelle zur Kommunikation zwischen Frontend und Backend
+- API-Schnittstelle zur Kommunikation zwischen Frontend und Backend
 
-Installation & Einrichtung
+<h3>Installation & Einrichtung</h3>
 
-<h3>Voraussetzungen</h3>
+Voraussetzungen
 
 Node.js & npm
 
