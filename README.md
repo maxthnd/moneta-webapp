@@ -2,7 +2,7 @@
 
 Moneta ist eine moderne Budgetplaner-App, die es Nutzern ermöglicht, Transaktionen in Budgetplänen zu verwalten. Die Anwendung basiert auf Vue.js im Frontend und PHP Laravel im Backend. Als Datenbank wird PostgreSQL genutzt, und das gesamte Projekt kann mit Docker betrieben werden.
 
-<h3>Technologien</h3>
+<h2>Technologien</h2>
 
 Frontend: Vue.js, Bootstrap
 
@@ -12,7 +12,7 @@ Datenbank: PostgreSQL
 
 Containerisierung: Docker
 
-<h3>Funktionen</h3>
+<h2>Funktionen</h2>
 
 - Erstellen und Verwalten von Budgetplänen
 
@@ -24,7 +24,7 @@ Containerisierung: Docker
 
 - API-Schnittstelle zur Kommunikation zwischen Frontend und Backend
 
-<h3>Installation & Einrichtung</h3>
+<h2>Installation & Einrichtung</h2>
 
 Voraussetzungen
 
@@ -36,10 +36,10 @@ Docker & Docker Compose
 
 Backend (Laravel) Setup
 
-<h3>Repository klonen:</h3>
+<h2>Repository klonen:</h2>
 
 git clone https://github.com/maxthnd/moneta-webapp.git
-cd moneta-webapp/backend
+cd moneta-api
 
 Abhängigkeiten installieren:
 
