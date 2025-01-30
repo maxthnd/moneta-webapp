@@ -37,6 +37,7 @@ Backend (Laravel) Setup
 <h2>Repository klonen:</h2>
 
 ```git clone https://github.com/maxthnd/moneta-webapp.git```
+
 cd moneta-api
 
 Abhängigkeiten installieren:
