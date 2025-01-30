@@ -1,6 +1,6 @@
 <h1>💸 MONETA</h1>
 
-Moneta ist eine moderne Budgetplaner-App, die es Nutzern ermöglicht, Transaktionen in Budgetplänen zu verwalten. Die Anwendung basiert auf Vue.js im Frontend und PHP Laravel im Backend. Als Datenbank wird PostgreSQL genutzt, und das gesamte Projekt kann mit Docker betrieben werden.
+Moneta ist eine moderne Budgetplaner-App, die es Nutzern ermöglicht ihre fianziellen Ziele zu erreichen. Limits sind oftmals doch nicht so schlecht, damit alles im Rahmen bleibt!
 
 <h2>Technologien</h2>
 
