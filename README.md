@@ -80,7 +80,7 @@ docker-compose up -d
 
 Die Anwendung ist nun unter http://localhost:8000 erreichbar.
 
-API-Endpunkte
+<h2>API-Endpunkte</h2>
 
 | Methode | Endpoint          | Beschreibung                 |
 | ------- | ----------------- | ---------------------------- |
