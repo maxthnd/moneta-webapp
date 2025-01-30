@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import Wave from "@/components/core/Wave.vue";
+import Popup from "@/components/core/Popup.vue";
 
 const router = useRouter();
 const showPopup = ref(false);
@@ -18,8 +19,8 @@ const createTransaction = (event) => {
 </script>
 
 <template>
-  <div class="plan-transaction-view">
-    <div class="plan-transaction-view-header">
+  <div class="account-data-view">
+    <div class="account-data-view-header">
       <h3>💸 Create Transaction</h3>
     </div>
     <div class="plan-transaction-view-body">
@@ -79,17 +80,12 @@ const createTransaction = (event) => {
     </div>
 
     <Wave />
-    <div
-        v-if="showPopup"
-        class="popup"
-    >
-      ✅ Transaction was created successfully!
-    </div>
+    <Popup v-if="showPopup" message="✅ Transaction was created successfully!"/>
   </div>
 </template>
 
 <style scoped>
-.plan-transaction-view-header {
+.account-data-view-header {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -112,7 +108,7 @@ const createTransaction = (event) => {
   padding: 0 64px;
   z-index: 2;
 }
-.plan-transaction-view {
+.account-data-view {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -134,34 +130,4 @@ form button {
   align-self: end;
 }
 
-.popup {
-  position: fixed;
-  top: 80px;
-  right: 20px;
-  background-color: #4caf50;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  animation: fadeInOut 3s forwards;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-    transform: translateY(-80px);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  90% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-80px);
-  }
-}
 </style>

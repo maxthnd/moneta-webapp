@@ -44,28 +44,6 @@
     ]
   },
   {
-    "title": "📊 Sparziele",
-    "contents": [
-      { "Costs": "100€" },
-      { "Add. Income": "2500€" },
-      { "Budget": "3000€" }
-    ],
-    "transactions": [
-      {
-        "name": "Investitionen",
-        "amount": "1500€",
-        "transaction_type": "Income",
-        "transaction_category": "Investments"
-      },
-      {
-        "name": "Neues Fahrrad",
-        "amount": "500€",
-        "transaction_type": "Expense",
-        "transaction_category": "Personal"
-      }
-    ]
-  },
-  {
     "title": "⚡️ Freizeitbudget",
     "contents": [
       { "Costs": "210€" },
