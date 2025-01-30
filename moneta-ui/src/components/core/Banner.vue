@@ -51,7 +51,8 @@ onMounted(() => {
 <template>
   <div class="banner-container">
     <div class="banner">
-      <img :src="imageUrl" alt="Logo" class="banner-image">
+      <img v-if="imageUrl.endsWith('.jpg')" :src="imageUrl" alt="Logo" class="banner-image">
+      <video v-if="imageUrl.endsWith('.mp4')" :src="imageUrl" autoplay muted loop class="banner-image"/>
       <div class="blacksetter"></div>
       <div class="banner-content">
         <img src="/assets/images/moneta_logo_trans_white.png" class="banner-icon" alt="Logo">

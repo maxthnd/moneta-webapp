@@ -1,7 +1,6 @@
 <script setup>
 import { ref, watch, toRefs } from "vue";
 
-// Props definieren und verwenden
 const props = defineProps({
   title: {
     type: String,
@@ -13,13 +12,11 @@ const props = defineProps({
   },
 });
 
-// Props reaktiv machen
 const { contents } = toRefs(props);
 
 const showModal = ref(false);
 const editableContents = ref([]);
 
-// Inhalte überwachen und initialisieren
 watch(
     contents,
     (newContents) => {
@@ -67,7 +64,7 @@ const saveChanges = () => {
       <h3>Edit {{ title }}</h3>
       <div class="popup-body">
         <div v-for="(item, index) in editableContents" :key="index" class="popup-item">
-          <div v-for="(value, key) in item" :key="key" class="form-group">
+          <div v-for="(value, key) in item" :key="'Budget'" class="form-group">
             <label :for="`input-${index}-${key}`">{{ key }}</label>
             <input
                 v-model="editableContents[index][key]"

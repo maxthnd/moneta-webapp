@@ -1,5 +1,5 @@
 <script setup>
-import { useSelectedPlanStore } from "@/stores/PlanService.js";
+import { useSelectedPlanStore } from "@/stores/PlanStore.js";
 import router from "@/router/index.js";
 import Wave from "@/components/core/Wave.vue";
 import TransactionTable from "@/components/plan-components/TransactionTable.vue";

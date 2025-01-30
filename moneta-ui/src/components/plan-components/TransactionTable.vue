@@ -1,10 +1,9 @@
 <script setup>
-import { ref, watch } from "vue";
-import { storeToRefs } from "pinia";
-import { useSelectedPlanStore } from "@/stores/PlanService.js";
+import {ref, watch} from "vue";
+import {storeToRefs} from "pinia";
+import {useSelectedPlanStore} from "@/stores/PlanStore.js";
 import router from "@/router/index.js";
 
-// Zugriff auf den Pinia-Store
 const selectedPlanStore = useSelectedPlanStore();
 const { plan } = storeToRefs(selectedPlanStore);
 
@@ -19,6 +18,7 @@ const deleteTransaction = (index) => {
   if (!plan.value || !transactions.value[index]) return;
   const row = document.querySelector(`#transaction-row-${index}`);
   row.classList.add("fade-out");
+
   setTimeout(() => {
     const updatedTransactions = [...transactions.value];
     updatedTransactions.splice(index, 1);
@@ -26,6 +26,7 @@ const deleteTransaction = (index) => {
     transactions.value = updatedTransactions;
   }, 500);
 };
+
 </script>
 
 
@@ -157,6 +158,7 @@ tr:hover {
   width: 100%;
 }
 
+
 .fade-out {
   animation: fadeOut 0.5s forwards;
 }
@@ -171,4 +173,6 @@ tr:hover {
     transform: translateY(-10px);
   }
 }
+
+
 </style>

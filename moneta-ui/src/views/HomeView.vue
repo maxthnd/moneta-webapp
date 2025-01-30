@@ -38,7 +38,7 @@ onMounted(() => {
 <template>
   <div class="home-view">
     <div class="home-banner">
-      <Banner :title="'More than a Budget Planner'" :imageUrl="'/assets/images/financesbanner.jpg'"/>
+      <Banner :title="'More than a Budget Planner'" :imageUrl="'/assets/images/moneyzoom.mp4'" />
     </div>
     <div ref="introduction" class="introduction-class">
       <Introduction></Introduction>
